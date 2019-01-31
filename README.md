@@ -120,8 +120,12 @@ git merge branchname
 2. **git fetch**：与git pull相比git fetch相当于是从远程获取最新版本到本地，但不会自动merge。如果需要有选择的合并git fetch是更好的选择。效果相同时git pull将更为快捷。
 
 ## tortoisegit常用
-1，git history 
+1. git history 
 选中文件，右键选择git history，可以查看文件修改历史
+
+## tip
+1. git log如何退出
+英文状态下按Q
 
 ## 参考
 http://www.open-open.com/lib/view/open1402748724087.html
