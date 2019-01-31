@@ -102,10 +102,8 @@ git merge branchname
 
      - **git log**：查看之前提交记录 
      
-         - **git log --pretty=oneline --abbrev-commit**：只查看commitid的方法
+         - **git log --pretty=oneline**：只查看commitid的方法
      - **git reset –hard commitId**：通过commit的id回退到那个状态
-
-7. 有时需要获取全部的分支信息：用**git fetch <远程主机名> **
 
 
 
