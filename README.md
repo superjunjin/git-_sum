@@ -34,9 +34,9 @@ TortoiseGit: https://tortoisegit.org/download/
 **git clone projectaddress newname**：克隆项目 
 默认克隆项目到项目名字的文件夹，添加newname后，克隆到newname文件夹
 
-**git add .**：跟踪所有文件且暂存文件（新文件）或暂存文件（注意有点号）
+**git add**：跟踪所有文件且暂存文件（新文件）或暂存文件（注意有点号）
 
-**git commit -a -m ‘added new marks’**： 
+**git commit -a -m 'added new marks'**： 
 自动把所有已经跟踪过的文件暂存起来一并提交并添加注释（跳过 git add步骤）
 
 **git status**：查看文件状态
@@ -82,6 +82,7 @@ git merge branchname
 不过，如果你确实想要删除该分支上的改动，可以用大写的删除选项 -D 强制执行。
 
 ## 通常使用步骤
+### 从服务端获取项目
 1. **git clone** 克隆项目到本地
 
 2. **git checkout branchname** 切换到需要的分支
@@ -105,7 +106,11 @@ git merge branchname
          - **git log --pretty=oneline**：只查看commitid的方法
      - **git reset –hard commitId**：通过commit的id回退到那个状态
 
-
+### 从本地新建项目
+1. **git init**
+2. **git add .** 跟踪所有文件且暂存文件（`注意有点号`）
+3. **git commit -a -m 'init'**：(`执行此命令后，才有master主分支，才可以新建分支，否则会报错`)
+4. **git branch branchname**：新建分支
 
 ## 其他命令使用
 
