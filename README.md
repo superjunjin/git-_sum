@@ -34,7 +34,7 @@ TortoiseGit: https://tortoisegit.org/download/
 **git clone projectaddress newname**：克隆项目 
 默认克隆项目到项目名字的文件夹，添加newname后，克隆到newname文件夹
 
-**git add .**：跟踪所有文件且暂存文件（新文件）或暂存文件
+**git add .**：跟踪所有文件且暂存文件（新文件）或暂存文件（注意有点号）
 
 **git commit -a -m ‘added new marks’**： 
 自动把所有已经跟踪过的文件暂存起来一并提交并添加注释（跳过 git add步骤）
