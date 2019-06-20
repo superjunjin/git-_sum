@@ -72,7 +72,7 @@ git checkout master
 
 git merge branchname
 
-**git push –set-upstream origin branchname**：第一次push分支会报错，需用此命令提交
+**git push --set-upstream origin branchname**：第一次push分支会报错，需用此命令提交
 
 **git branch –merged**：查询已经合并分支 
 一般来说，列表中没有 * 的分支通常都可以用 git branch -d 来删掉。原因很简单，既然已经把它们所包含的工作整合到了其他分支，删掉也不会损失什么。
