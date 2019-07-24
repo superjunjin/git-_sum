@@ -60,9 +60,9 @@ TortoiseGit: https://tortoisegit.org/download/
 
 **git checkout -b branchname**：新建并切换分支
 
-**git branch -d | -D branchname**: 删除本地分支 
+**git branch -d | -D branchname**: 删除本地分支(注意不要再要删除的分支执行，切换到其他分支，再删除想删除的分支) 
 
-**git branch -d -r branchname**: 删除远程分支
+**git push origin --delete branchname**: 删除远程分支
 
 **git merge branchname**：合并分支 
 
