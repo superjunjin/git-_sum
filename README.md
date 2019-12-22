@@ -15,9 +15,12 @@ TortoiseGit: https://tortoisegit.org/download/
 
 ## 配置
 - 查看配置信息：git config [--global | system | local] --list
-- 设置用户名：git config [--global | system | local] user.name <yourname>- 
-- 设置用户邮箱：git config [--global | system | local] user.email <youremail@xxx.com>- 
+- 设置用户名：git config [--global | system | local] user.name <yourname>
+- 设置用户邮箱：git config [--global | system | local] user.email <youremail@xxx.com>
 - 设置git命令别名：git config [--global | system | local] alias.<newCommand> <originalCommand>
+- 生成公钥：
+  cd ~/.ssh
+  ssh-keygen -t rsa -C "youremail@xxx.com" 两次回车
 - 设置用户名密码授权：git config --global credential.helper osxkeychain
 经过上面的设置，下次克隆 `HTTPS` 地址时会询问用户名和密码，并授权给osxkeychain，完成之后用户名和密码就会存储到keychain中，此后再也不会在 Git 中询问了。
 
