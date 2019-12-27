@@ -92,6 +92,16 @@ git merge branchname
 由于这些分支中还包含着尚未合并进来的工作成果，所以简单地用 git branch -d 删除该分支会提示错误。 
 不过，如果你确实想要删除该分支上的改动，可以用大写的删除选项 -D 强制执行。
 
+## tag
+
+**git tag **： 查看标签
+
+**git tag -a v1.4 -m "my version 1.4"**： 附注标签
+
+**git push origin [tagname]**： 推送标签
+
+**git show [tagname]**： 查看标签
+
 ## 通常使用步骤
 ### 从服务端获取项目
 1. **git clone** 克隆项目到本地
