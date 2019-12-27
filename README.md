@@ -94,7 +94,7 @@ git merge branchname
 
 ## tag
 
-**git tag **： 查看标签
+**git tag**： 查看标签
 
 **git tag -a v1.4 -m "my version 1.4"**： 附注标签
 
