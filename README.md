@@ -102,6 +102,10 @@ git merge branchname
 
 **git show [tagname]**： 查看标签
 
+**git tag -d <tagname>**:  删除标签
+  
+**git push origin :refs/tags/<tagname>**:  删除远端标签  
+
 ## 通常使用步骤
 ### 从服务端获取项目
 1. **git clone** 克隆项目到本地
