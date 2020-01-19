@@ -108,6 +108,8 @@ git merge branchname
 
 ### GIT回滚master分支到指定tag版本
 
+https://www.cnblogs.com/diandianquanquan/p/10679347.html
+
 1, 查看分支
 git branch
 
