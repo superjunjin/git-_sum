@@ -106,6 +106,27 @@ git merge branchname
   
 **git push origin :refs/tags/[tagname]**:  删除远端标签  
 
+### GIT回滚master分支到指定tag版本
+
+1, 查看分支
+git branch
+2, 切换分支
+git checkout master
+3, 查看标签(tag版本)
+git tag
+4, 查看某个标签的详情
+git show v2.22.0
+
+commit d53dcc2287899e95cfd44a294ca3e5068e63022b
+5, 通过commit的id回退
+git reset --hard fb479960c0cec5549463ae123d70bdd72ccf6be7
+6, 查看状态
+git status
+7, 提交
+git push origin master
+或者加入-f参数，强制提交，远程端将强制跟新到reset版本
+git push -f origin master
+
 ## 通常使用步骤
 ### 从服务端获取项目
 1. **git clone** 克隆项目到本地
