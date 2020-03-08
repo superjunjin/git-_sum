@@ -106,6 +106,10 @@ git merge branchname
   
 **git push origin :refs/tags/[tagname]**:  删除远端标签  
 
+**git tag -a [tagname] [commitId]**： 给指定的commit打标签，需要commit的head
+
+**git checkout [tagname]**：跳转到指定标签
+
 ### GIT回滚master分支到指定tag版本
 
 https://www.cnblogs.com/diandianquanquan/p/10679347.html
@@ -175,6 +179,29 @@ git push -f origin master
  - **git push –mirror** 新项目地址
 
 2. **git fetch**：与git pull相比git fetch相当于是从远程获取最新版本到本地，但不会自动merge。如果需要有选择的合并git fetch是更好的选择。效果相同时git pull将更为快捷。
+
+3. 找到历史提交的commit id
+
+ - $ git log --pretty=oneline --abbrev-commit
+ 
+ ```
+12a631b (HEAD -> master, tag: v1.0, origin/master) merged bug fix 101
+4c805e2 fix bug 101
+e1e9c68 merge with no-ff
+f52c633 add merge
+cf810e4 conflict fixed
+5dc6824 & simple
+14096d0 AND simple
+b17d20e branch test
+d46f35e remove test.txt
+b84166e add test.txt
+519219b git tracks changes
+e43a48b understand how stage works
+1094adb append GPL
+e475afc add distributed
+eaadf4e wrote a readme file
+ ```
+
 
 ## tortoisegit常用
 1. git history 
