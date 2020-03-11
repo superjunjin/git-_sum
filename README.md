@@ -170,6 +170,20 @@ git push -f origin master
 3. **git commit -a -m 'init'**：(`执行此命令后，才有master主分支，才可以新建分支，否则会报错`)
 4. **git branch branchname**：新建分支
 
+### git删除中间某次提交
+
+1、首先找到此次提交之前的一次提交的commit 7753f40d892a8e0d14176a42f6e12ae0179a3210
+2、执行如下命令
+git rebase -i (commit-id)
+commit-id 为要删除的commit的下一个commit号
+git rebase -i 7753f40
+
+
+3、编辑文件，将要删除的commit之前的单词改为drop ，然后按照提示保存退出
+
+4、此已经删除了指定的commit，可以使用git log查看下
+git push --force 然后推送到远程仓库
+
 ## 其他命令使用
 
 1. 从原项目获取所有的提交信息和完整项目，提交到新地址
